@@ -1,18 +1,18 @@
 # YAML 1.2
 ---
 authors: 
-  - family-names: sobrenome do aluno 1
-    given-names: Nome do aluno 1 
-  - family-names: sobrenome do aluno 2
-    given-names: Nome do aluno 2 
-  - family-names: sobrenome do aluno 3
-    given-names: Nome do aluno 3 
-  - family-names: sobrenome do aluno 4
-    given-names: Nome do aluno 4 
-  - family-names: sobrenome do aluno 5
-    given-names: Nome do aluno 5 
-  - family-names: sobrenome do aluno 6
-    given-names: Nome do aluno 6
+  - family-names: Fernando Moura Santos
+    given-names: Luís 
+  - family-names: Venuto Monteiro
+    given-names: Cássio 
+  - family-names: Pitta Sesso
+    given-names: Sofia 
+  - family-names: Marques Braga
+    given-names: Paola 
+  - family-names: Corina Damas Batista
+    given-names: Ana 
+  - family-names: Nunes Morato
+    given-names: Maryana 
     
   - name-suffix: Professor
     affiliation: PUC Minas
@@ -30,15 +30,15 @@ authors:
 cff-version: "1.1.0"
 keywords: 
   - "Modelagem de Processos de Negócios"
-  - "Palavra chave 2"
-  - "Palavra chave 3"
+  - "Venda"
+  - "usados"
 message: |
     "If you use this software, please cite it using these metadata.
     Se você utilizar este software, por favor cite-o utilizando estes metadados."
 repository-code: "https://github.com/url do projeto"
-title: "Título do projeto"
+title: "ReStory"
 abstract: |
     "
-    Breve descrição do projeto
+    Uma plataforma que facilite a interação de pessoas que desejam vender seus objetos usados e as que desejam comprar.
     "
 ...
