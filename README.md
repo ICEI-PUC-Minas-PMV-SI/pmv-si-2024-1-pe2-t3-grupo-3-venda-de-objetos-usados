@@ -1,6 +1,6 @@
 # Nome do projeto
 
-Escreva um ou dois parágrafos resumindo o objetivo de seu projeto.
+Uma plataforma que facilite a interação de pessoas que desejam vender seus objetos usados e as que desejam comprar.
 
 ## Integrantes
 
