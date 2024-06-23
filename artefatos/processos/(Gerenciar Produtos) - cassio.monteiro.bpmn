@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema" id="_Id_b0f99187-0175-48b1-ad6a-000000000001" targetNamespace="http://www.bizagi.com/definitions/Id_b0f99187-0175-48b1-ad6a-000000000001">
+    <process id="Id_b0f99187-0175-48b1-ad6a-000000000001" name="(Gerenciar Produtos) - cassio.monteiro">
+        <documentation/>
+        <laneSet>
+            <lane id="Id_f144160c-0175-48b1-ad6a-000000000003" name="Vendedor">
+                <childLaneSet id="Id_a756656c-0175-48b1-ad6a-000000000004"/>
+            </lane>
+        </laneSet>
+        <userTask id="Id_79305ef1-0175-48b1-ad6a-000000000005" name="Visualizar dados"/>
+        <userTask id="Id_1b1e29aa-0175-48b1-ad6a-000000000006" name="Atualizar dados do produto"/>
+        <userTask id="Id_e39acc32-0175-48b1-ad6a-000000000007" name="Adicionar produto"/>
+        <userTask id="Id_d2856b71-0175-48b1-ad6a-000000000008" name="Excluir produto"/>
+        <exclusiveGateway id="Id_24727977-0175-48b1-ad6a-000000000009" name="O que o vendedor deseja?"/>
+        <startEvent id="Id_b29930cc-0175-48b1-ad6a-000000000010" name=""/>
+        <endEvent id="Id_5b43c967-0175-48b1-ad6a-000000000011" name="">
+            <terminateEventDefinition id="Id_75bf58fc-0175-48b1-ad6a-000000000012"/>
+        </endEvent>
+        <sequenceFlow id="Id_ecffb737-0175-48b1-ad6a-000000000013" sourceRef="Id_79305ef1-0175-48b1-ad6a-000000000005" targetRef="Id_24727977-0175-48b1-ad6a-000000000009"/>
+        <sequenceFlow id="Id_8bc95b50-0175-48b1-ad6a-000000000014" sourceRef="Id_24727977-0175-48b1-ad6a-000000000009" targetRef="Id_1b1e29aa-0175-48b1-ad6a-000000000006"/>
+        <sequenceFlow id="Id_2c3eb429-0175-48b1-ad6a-000000000015" sourceRef="Id_24727977-0175-48b1-ad6a-000000000009" targetRef="Id_e39acc32-0175-48b1-ad6a-000000000007"/>
+        <sequenceFlow id="Id_254b3f58-0175-48b1-ad6a-000000000016" sourceRef="Id_24727977-0175-48b1-ad6a-000000000009" targetRef="Id_d2856b71-0175-48b1-ad6a-000000000008"/>
+        <sequenceFlow id="Id_5368d6a9-0175-48b1-ad6a-000000000017" sourceRef="Id_24727977-0175-48b1-ad6a-000000000009" targetRef="Id_5b43c967-0175-48b1-ad6a-000000000011"/>
+        <sequenceFlow id="Id_57579b64-0175-48b1-ad6a-000000000018" sourceRef="Id_e39acc32-0175-48b1-ad6a-000000000007" targetRef="Id_5b43c967-0175-48b1-ad6a-000000000011"/>
+        <sequenceFlow id="Id_9e6fb997-0175-48b1-ad6a-000000000019" sourceRef="Id_1b1e29aa-0175-48b1-ad6a-000000000006" targetRef="Id_5b43c967-0175-48b1-ad6a-000000000011"/>
+        <sequenceFlow id="Id_e9cbeb40-0175-48b1-ad6a-000000000020" sourceRef="Id_d2856b71-0175-48b1-ad6a-000000000008" targetRef="Id_5b43c967-0175-48b1-ad6a-000000000011"/>
+        <sequenceFlow id="Id_11706083-0175-48b1-ad6a-000000000021" sourceRef="Id_b29930cc-0175-48b1-ad6a-000000000010" targetRef="Id_79305ef1-0175-48b1-ad6a-000000000005"/>
+    </process>
+    <collaboration id="Id_0d52d5e6-0175-48b1-ad6a-000000000001" name="(Gerenciar Produtos) - cassio.monteiro">
+        <participant id="Id_e370fa48-0175-48b1-ad6a-000000000002" name="(Gerenciar Produtos) - cassio.monteiro" processRef="Id_b0f99187-0175-48b1-ad6a-000000000001"/>
+    </collaboration>
+    <BPMNDiagram xmlns="http://www.omg.org/spec/BPMN/20100524/DI" id="Id_fd0f1056-0175-48b1-ad6a-000000000022">
+        <BPMNPlane bpmnElement="Id_0d52d5e6-0175-48b1-ad6a-000000000001" id="Id_8bd81b28-0175-48b1-ad6a-000000000023">
+            <BPMNShape bpmnElement="Id_24727977-0175-48b1-ad6a-000000000009" id="Id_177c5d38-0175-48b1-ad6a-000000000024">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="30" width="30" x="443" y="55"/>
+            </BPMNShape>
+            <BPMNShape bpmnElement="Id_f144160c-0175-48b1-ad6a-000000000003" id="Id_12c96430-0175-48b1-ad6a-000000000025" isHorizontal="true">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="317" width="1176" x="50" y="0"/>
+            </BPMNShape>
+            <BPMNShape bpmnElement="Id_b29930cc-0175-48b1-ad6a-000000000010" id="Id_5d95c3ea-0175-48b1-ad6a-000000000026">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="30" width="30" x="119" y="53"/>
+            </BPMNShape>
+            <BPMNShape bpmnElement="Id_5b43c967-0175-48b1-ad6a-000000000011" id="Id_44419833-0175-48b1-ad6a-000000000027">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="30" width="30" x="813" y="46"/>
+            </BPMNShape>
+            <BPMNShape bpmnElement="Id_1b1e29aa-0175-48b1-ad6a-000000000006" id="Id_63051bba-0175-48b1-ad6a-000000000028">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="59" width="134" x="603" y="116"/>
+            </BPMNShape>
+            <BPMNShape bpmnElement="Id_d2856b71-0175-48b1-ad6a-000000000008" id="Id_86ca64d7-0175-48b1-ad6a-000000000029">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="59" width="134" x="603" y="190"/>
+            </BPMNShape>
+            <BPMNShape bpmnElement="Id_79305ef1-0175-48b1-ad6a-000000000005" id="Id_59e2e77b-0175-48b1-ad6a-000000000030">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="59" width="134" x="212" y="36"/>
+            </BPMNShape>
+            <BPMNShape bpmnElement="Id_e39acc32-0175-48b1-ad6a-000000000007" id="Id_2f71fc5f-0175-48b1-ad6a-000000000031">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="59" width="134" x="603" y="36"/>
+            </BPMNShape>
+            <BPMNEdge bpmnElement="Id_ecffb737-0175-48b1-ad6a-000000000013" id="Id_fc615d7b-0175-48b1-ad6a-000000000032">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="212" y="36"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="443" y="55"/>
+            </BPMNEdge>
+            <BPMNEdge bpmnElement="Id_8bc95b50-0175-48b1-ad6a-000000000014" id="Id_b768f73d-0175-48b1-ad6a-000000000033">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="443" y="55"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="463" y="133"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="603" y="116"/>
+            </BPMNEdge>
+            <BPMNEdge bpmnElement="Id_2c3eb429-0175-48b1-ad6a-000000000015" id="Id_8ed9cef3-0175-48b1-ad6a-000000000035">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="443" y="55"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="603" y="36"/>
+            </BPMNEdge>
+            <BPMNEdge bpmnElement="Id_254b3f58-0175-48b1-ad6a-000000000016" id="Id_5a7c8d69-0175-48b1-ad6a-000000000036">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="443" y="55"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="463" y="205"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="603" y="190"/>
+            </BPMNEdge>
+            <BPMNEdge bpmnElement="Id_5368d6a9-0175-48b1-ad6a-000000000017" id="Id_e11d008d-0175-48b1-ad6a-000000000038">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="443" y="55"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="463" y="278"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="833" y="278"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="813" y="46"/>
+            </BPMNEdge>
+            <BPMNEdge bpmnElement="Id_57579b64-0175-48b1-ad6a-000000000018" id="Id_22b507a3-0175-48b1-ad6a-000000000041">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="603" y="36"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="813" y="46"/>
+            </BPMNEdge>
+            <BPMNEdge bpmnElement="Id_9e6fb997-0175-48b1-ad6a-000000000019" id="Id_123d7175-0175-48b1-ad6a-000000000042">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="603" y="116"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="833" y="145"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="813" y="46"/>
+            </BPMNEdge>
+            <BPMNEdge bpmnElement="Id_e9cbeb40-0175-48b1-ad6a-000000000020" id="Id_3c2d80c4-0175-48b1-ad6a-000000000044">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="603" y="190"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="833" y="221"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="813" y="46"/>
+            </BPMNEdge>
+            <BPMNEdge bpmnElement="Id_11706083-0175-48b1-ad6a-000000000021" id="Id_093c89bf-0175-48b1-ad6a-000000000046">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="119" y="53"/>
+                <waypoint xmlns="http://www.omg.org/spec/DD/20100524/DI" x="212" y="36"/>
+            </BPMNEdge>
+            <BPMNShape bpmnElement="Id_e370fa48-0175-48b1-ad6a-000000000002" id="Id_56cfaf9c-0175-48b1-ad6a-000000000047">
+                <extension xmlns="http://www.omg.org/spec/DD/20100524/DI"/>
+                <Bounds xmlns="http://www.omg.org/spec/DD/20100524/DC" height="317" width="1176" x="18" y="0"/>
+            </BPMNShape>
+        </BPMNPlane>
+    </BPMNDiagram>
+</definitions>
