@@ -1,4 +1,4 @@
-# Nome do projeto
+# ReStory
 
 Uma plataforma que facilite a interação de pessoas que desejam vender seus objetos usados e as que desejam comprar.
 
